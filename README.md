@@ -1,59 +1,37 @@
-# Phonebook
+# 📇 Phonebook
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+**Phonebook** is a web application built with Angular that simulates a phonebook, with features for registering, editing, deleting, searching, and offline persistence of contacts.
 
-## Development server
+Developed with a focus on organization and reactivity, the project uses practices such as BEM in SCSS, Reactive Forms in Angular, and state management with RxJS — ensuring a fluid and responsive experience for the user.
 
-To start a local development server, run:
+<div align="center">
+<img src="screen/home.gif" alt="Phonebook Demo" width="600">
+</div>
 
-```bash
-ng serve
-```
+## 🚀 Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Add, edit, and remove contacts
+- Upload photo via URL
+- Phone mask with `ngx-mask`
+- Real-time name search
+- Responsive layout and clean visuals
+- Persistence with `localStorage`
+- Deploy via GitHub Pages
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🧰 Technologies and tools
 
-```bash
-ng generate component component-name
-```
+- **Angular** 20
+- **RxJS** – reactive contact management with `BehaviorSubject`
+- **SCSS (BEM)** – scalable stylesheet architecture
+- **ngx-mask** – smart masks on inputs
+- **TypeScript** – strong typing and organization
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📌 How to run locally
 
 ```bash
-ng test
+git clone https://github.com/jordanwmp/angular-phonebook.git
+cd angular-phonebook
+npm install
+ng serves
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
