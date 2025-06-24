@@ -1,0 +1,16 @@
+<form [formGroup]="contactForm" class="contact-form" (ngSubmit)="handleSubmit()">
+  
+  <div class="contact-form__group">
+    <label for="name" class="contact-form__label">Name</label>
+    <input type="text" id="name" formControlName="name" placeholder="Contact's name" class="contact-form__input" />
+  </div>
+
+  <div class="contact-form__group">
+    <label for="phone" class="contact-form__label">Phone</label>
+    <input type="text" id="phone" formControlName="phone" placeholder="Phone number"
+      class="contact-form__input" mask="(00) 0 0000-0000"/>
+  </div>
+
+  <button type="submit" class="contact-form__btn">{{ contactToEdit() ? 'Update' : 'Create' }}</button>
+  
+</form>

@@ -1,0 +1,19 @@
+<div class="contact-list">
+  <div *ngFor="let contact of contacts()" class="contact-list__item">
+    <div class="contact-list__item-info">
+      <div class="contact-list__item-details">
+        <span class="contact-list__item-name">{{ contact.name }}</span>
+        <span class="contact-list__item-phone">{{ contact.phone | mask: '(00) 0 0000-0000' }}</span>
+      </div>
+    </div>
+    <div class="contact-list__item-actions">
+      <button (click)="handleEdit(contact)" class="contact-list__item-btn contact-list__item-btn--edit">
+        <span class="material-icons">edit</span>
+      </button>
+      <button (click)="handleDelete(contact!.id!)"
+        class="contact-list__item-btn contact-list__item-btn--delete">
+        <span class="material-icons">delete</span>
+      </button>
+    </div>
+  </div>
+</div>

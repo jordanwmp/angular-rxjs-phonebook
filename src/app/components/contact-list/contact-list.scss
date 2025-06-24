@@ -1,0 +1,87 @@
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  min-width: 400px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__item-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+
+  &__item-details {
+    display: flex;
+    flex-direction: column;
+
+    & > .contact-list__item-name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    & > .contact-list__item-phone {
+      font-size: 0.95rem;
+      color: #666;
+    }
+  }
+
+  &__item-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__item-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &--edit {
+      background-color: #17a2b8;
+      color: #fff;
+
+      &:hover {
+        background-color: #138496;
+      }
+    }
+
+    &--delete {
+      background-color: #dc3545;
+      color: #fff;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+}
