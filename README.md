@@ -36,5 +36,5 @@ npm install
 ng serves
 ```
 ## 🖥️ You can access the live
-[live](https://jordanwmp.github.io/angular-rxjs-phonebook/)
+[Click here](https://jordanwmp.github.io/angular-rxjs-phonebook/)
 
