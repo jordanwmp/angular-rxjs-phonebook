@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ghpages": "ng build --base-href=/angular-rxjs-phonebook/",
+    "ghpages": "npx angular-cli-ghpages --dir=dist/phonebook/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

@@ -1,3 +1,10 @@
+@if(!contacts().length) {
+<div class="contact-list__empty">
+  <span class="material-icons">info</span>
+  <span class="contact-list__empty-text">No contacts. Add your first contact.</span>
+</div>
+}
+@else{
 <div class="contact-list">
   <div *ngFor="let contact of contacts()" class="contact-list__item">
     <div class="contact-list__item-info">
@@ -10,10 +17,10 @@
       <button (click)="handleEdit(contact)" class="contact-list__item-btn contact-list__item-btn--edit">
         <span class="material-icons">edit</span>
       </button>
-      <button (click)="handleDelete(contact!.id!)"
-        class="contact-list__item-btn contact-list__item-btn--delete">
+      <button (click)="handleDelete(contact!.id!)" class="contact-list__item-btn contact-list__item-btn--delete">
         <span class="material-icons">delete</span>
       </button>
     </div>
   </div>
 </div>
+}
